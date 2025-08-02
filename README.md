@@ -1,12 +1,19 @@
-# React + Vite
+# Quick Desk Support System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Quick Desk** is a modern web-based support ticket management system built using **React + Vite**. It offers a complete helpdesk workflow where:
 
-Currently, two official plugins are available:
+- ✅ Users can register, log in, and create tickets with attachments.
+- ✅ Agents can manage tickets, update statuses, and add comments.
+- ✅ Admins can manage categories.
+- ✅ Role-based access ensures security and personalized views.
+- ✅ Supports filtering, searching, sorting, and comment voting.
+- ✉️ Email notifications for ticket updates and status changes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- Frontend: React + Vite + TailwindCSS (optional)
+- Routing: React Router
+- State Management: Context API
+- API (Optional Backend): Node.js, Express, MongoDB / Firebase
 
-## Expanding the ESLint configuration
+> Future integrations can include chat support, SLA tracking, and analytics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
