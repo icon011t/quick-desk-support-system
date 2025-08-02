@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './auth/Login';
-import Register from './auth/Register';
-import Dashboard from './pages/Dashboard';
-import AdminPanel from './pages/AdminPanel';
-import AgentPanel from './pages/AgentPanel';
-import ForgotPassword from './auth/ForgotPassword';
-import ResetPassword from './auth/ResetPassword';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import Login from './auth/Login.jsx';
+import Register from './auth/Register.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import AdminPanel from './pages/AdminPanel.jsx';
+import AgentPanel from './pages/AgentPanel.jsx';
+import ForgotPassword from './auth/ForgotPassword.jsx';
+import ResetPassword from './auth/ResetPassword.jsx';
+import { AuthProvider, useAuth } from './context/AuthContext.jsx';
 
 const PrivateRoute = ({ element, roles }) => {
   const { user } = useAuth();

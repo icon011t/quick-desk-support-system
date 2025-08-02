@@ -1,8 +1,8 @@
 // src/pages/Dashboard.jsx
 import { useState, useEffect } from 'react';
-import TicketForm from '../components/TicketForm';
-import TicketList from '../components/TicketList';
-import TicketView from '../components/TicketView';
+import TicketForm from '../components/TicketForm.jsx';
+import TicketList from '../components/TicketList.jsx';
+import TicketView from '../components/TicketView.jsx';
 import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import './Dashboard.css';
