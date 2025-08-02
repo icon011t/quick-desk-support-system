@@ -4,8 +4,9 @@ import Register from './auth/Register';
 import Dashboard from './pages/Dashboard';
 import AdminPanel from './pages/AdminPanel';
 import AgentPanel from './pages/AgentPanel';
+import ForgotPassword from './auth/ForgotPassword';
+import ResetPassword from './auth/ResetPassword';
 import { AuthProvider, useAuth } from './context/AuthContext';
-import './App.css';
 
 const PrivateRoute = ({ element, roles }) => {
   const { user } = useAuth();
@@ -23,6 +24,8 @@ const App = () => (
         <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
         <Route path="/admin" element={<PrivateRoute element={<AdminPanel />} roles={['admin']} />} />
         <Route path="/agent" element={<PrivateRoute element={<AgentPanel />} roles={['agent']} />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+<Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>

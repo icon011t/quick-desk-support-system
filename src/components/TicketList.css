@@ -1,0 +1,106 @@
+.ticket-list-container {
+  width: 100%;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #cbd5e1;
+}
+
+.ticket-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.no-ticket-msg {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.ticket-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-2px);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.ticket-status {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Status Styles */
+.status-open {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-progress {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.status-resolved {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.status-closed {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.ticket-description {
+  margin: 0.5rem 0;
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

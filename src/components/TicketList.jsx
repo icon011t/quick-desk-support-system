@@ -1,16 +1,32 @@
+// src/components/TicketList.jsx
+import React from 'react';
+import './TicketList.css';
+
 const TicketList = ({ tickets = [], onSelect, onFilter }) => {
   return (
-    <div className="p-4">
-      <div className="space-x-2 mb-4">
-        <button onClick={() => onFilter('open')}>Open</button>
-        <button onClick={() => onFilter('closed')}>Closed</button>
+    <div className="ticket-list-container">
+      <div className="filter-buttons">
+        <button onClick={() => onFilter('all')} className="filter-btn">All</button>
+        <button onClick={() => onFilter('Open')} className="filter-btn">Open</button>
+        <button onClick={() => onFilter('In Progress')} className="filter-btn">In Progress</button>
+        <button onClick={() => onFilter('Closed')} className="filter-btn">Closed</button>
       </div>
-      <ul className="space-y-2">
-        {tickets.map((ticket) => (
-          <li key={ticket.id} onClick={() => onSelect(ticket)} className="cursor-pointer border p-2">
-            <strong>{ticket.subject}</strong> - {ticket.status}
-          </li>
-        ))}
+
+      <ul className="ticket-list">
+        {tickets.length === 0 ? (
+          <p className="no-ticket-msg">No tickets available.</p>
+        ) : (
+          tickets.map((ticket) => (
+            <li
+              key={ticket._id}
+              onClick={() => onSelect(ticket)}
+              className="ticket-card"
+            >
+              <div className="ticket-title">{ticket.subject}</div>
+              <div className="ticket-meta">Status: {ticket.status}</div>
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );
