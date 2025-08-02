@@ -1,0 +1,88 @@
+/* AgentPanel.css */
+/* Main container */
+.agentpanel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-family: "San Francisco", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+/* Ticket list section */
+.agentpanel-list {
+  background: rgba(255,255,255,0.96);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(31,38,135,0.06);
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.agentpanel-list h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222d3a;
+}
+
+.agentpanel-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agentpanel-list li {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.agentpanel-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31,38,135,0.1);
+}
+
+.agentpanel-list li .status {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+.agentpanel-list li .status.Open   { background: #dbeafe; color: #2563eb; }
+.agentpanel-list li .status.Closed { background: #fee2e2; color: #dc2626; }
+.agentpanel-list li .status.Pending{ background: #fef3c7; color: #f59e0b; }
+
+/* TicketView section */
+.agentpanel-view {
+  background: rgba(255,255,255,0.96);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(31,38,135,0.06);
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  animation: fadeInRight 0.6s ease-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .agentpanel-container {
+    grid-template-columns: 1fr;
+  }
+}

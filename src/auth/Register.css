@@ -1,0 +1,93 @@
+/* Apply global font for iOS vibe with elegant, rounded input styles */
+body {
+  font-family: "San Francisco", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f8fa 0%, #dbeafe 100%);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Container styling for the form */
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 28px;
+  box-shadow: 0 8px 20px rgba(31, 38, 135, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #222d3a;
+  letter-spacing: -0.4px;
+}
+
+/* Form styles */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input styles for a modern look */
+.register-input {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: #f2f3f7;
+  font-size: 1.05rem;
+  transition: box-shadow 0.16s, background-color 0.16s;
+  outline: none;
+  color: #363a3c;
+}
+
+.register-input:focus {
+  background-color: #edf1fb;
+  box-shadow: 0 0 0 2px #2563eb33;
+}
+
+/* Submit button styles */
+.register-button {
+  background: linear-gradient(97deg, #2563eb 80%, #818cf8 100%);
+  padding: 14px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.1s;
+  box-shadow: 0 3px 10px rgba(50, 100, 250, 0.07);
+}
+
+.register-button:hover {
+  background: linear-gradient(97deg, #2563eb 60%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.025);
+}
+
+/* Additional styling for bottom links or info */
+.register-info {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #818cf8;
+}
+
+.register-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.13s;
+}
+
+.register-link:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
