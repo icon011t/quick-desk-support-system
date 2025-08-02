@@ -10,7 +10,7 @@
 - ✉️ Email notifications for ticket updates and status changes.
 
 ## Tech Stack
-- Frontend: React + Vite + TailwindCSS (optional)
+- Frontend: React + Vite + TailwindCSS 
 - Routing: React Router
 - State Management: Context API
 - API (Optional Backend): Node.js, Express, MongoDB / Firebase
